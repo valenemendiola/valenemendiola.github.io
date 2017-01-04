@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Antonio Trento, theme Jeky New Age, the start Bootstrap themplate build for jekyll</title>
+    <title>Agency Timeline</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -25,13 +25,8 @@
     <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="/vendor/device-mockups/device-mockups.min.css">
 
-    <!-- Custom CSS
-    <link rel="stylesheet" href="css/main.css" type="text/css"> -->
+    <!-- Custom CSS -->
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="/css/style.css"> <!-- Resource style -->
-	<script src="/js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,7 +62,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="/">Jeky New Age</a>
+            <a class="navbar-brand page-scroll" href="/">Jeky New Age | Agency Timeline</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,6 +70,9 @@
             <ul class="nav navbar-nav navbar-right">
               <li>
                   <a href="/">Home</a>
+              </li>
+              <li>
+                  <a href="/history-options/">History</a>
               </li>
               <!--  <li>
                     <a class="page-scroll" href="#download">What</a>
@@ -99,17 +97,44 @@
 </nav>
 
   <header>
-    <div class="container">
-        <div class="row">
-		<div class="header-content">
+	<div class="container">
+		<div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
                     <div class="header-content-inner">
-                        <h1>League at AT&T<br>History / Timeline</h1>
-                    </div>
-                </div>
+                        <h1>League at AT&T<br>History / Timeline Options</h1>
+		    		</div>
+				</div>
+			</div>
+			
+		<div class="col-sm-3">
+
+                <div class="device-container">
+					<p><a href="/history/agency/#timeline" class="btn btn-outline btn-xl page-scroll">Agency</a></p>
+					<p><a href="/history/bruno/#timeline" class="btn btn-outline btn-xl page-scroll">Bruno</a></p>
+					<p><a href="/history/codyhouse/#timeline" class="btn btn-outline btn-xl page-scroll">Codyhouse</a></p>
+				</div>
+
             </div>
+		</div>
+	</div>
 </header>
 
-  <section id="cd-timeline" class="cd-container">
+
+  <link rel="stylesheet" href="/css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="/css/style.css"> <!-- Resource style -->
+
+
+<section id="timeline">
+	<div class="container">
+		<div class="row">
+			<div class="text-center">
+				<h2 class="section-heading">Agency Timeline</h2>
+			</div>
+		</div>
+	</div>
+
+<div id="cd-timeline" class="cd-container">
 		
 	<div class="cd-timeline-block">
 		<div class="cd-timeline-img cd-picture">
@@ -334,11 +359,11 @@
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
-	</section> <!-- cd-timeline -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/js/main.js"></script> <!-- Resource jQuery -->
-</body>
-</html>
+	</div> <!-- cd-timeline -->
+
+</section>  <!-- timeline -->
+
+
 
   
 <section id="contact" class="contact bg-primary">
@@ -414,6 +439,11 @@
 
 <!-- Theme JavaScript -->
 <script src="/js/new-age.min.js"></script>
+
+<!-- Modernzer JavaScript -->
+<script src="/js/modernizr.js"></script> <!-- Modernizr -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/js/main.js"></script> <!-- Resource jQuery -->
 
 
 <script type="text/javascript">
