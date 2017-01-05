@@ -60,6 +60,38 @@
 	border-radius:50%;
 }
 
+#btimeline .btimeline-item .btimeline-icon p{
+	line-height:1em;
+	font-size:1.75em;
+	text-align: center;
+	font-weight:bold;
+	margin-top: 12px;
+}
+
+#btimeline .btimeline-item .btimeline-icon-last{
+	background:#ee4d4d;
+	width:75px;
+	height:75px;
+	position:absolute;
+	top:0;
+	left:49%;
+	overflow:hidden;
+	margin-left:-23px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+}
+
+#btimeline .btimeline-item .btimeline-icon-last p{
+	line-height:2em;
+	font-size:1.75em;
+	text-align: center;
+	font-weight:bold;
+	margin-top: 12px;
+}
+
+
 #btimeline .btimeline-item .btimeline-icon img {
 	position:relative;
 	top:11px;
@@ -68,7 +100,7 @@
 
 #btimeline .btimeline-item .btimeline-content{
 	width:45%;
-	background:#fff;
+	background: #fff;
 	padding:20px;
 	-webkit-box-shadow:0 3px 0 rgba(0,0,0,0.1);
 	-moz-box-shadow:0 3px 0 rgba(0,0,0,0.1);
@@ -80,7 +112,7 @@
 	border-radius:5px;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
+	fff-ms-transition:all 0.3s ease;
 	transition:all 0.3s ease;
 }
 
@@ -89,7 +121,7 @@
 	background:#ee4d4d;
 	color:#fff;
 	margin:-20px -20px 0 -20px;
-	font-weight:50;
+	font-weight:500;
 	font-size: 20px; 
 	line-height: 15px;
 	-webkit-border-radius:3px 3px 0 0;
@@ -98,6 +130,11 @@
 	border-radius:3px 3px 0 0;
 }
 
+#btimeline .btimeline-item .btimeline-content {
+	color: gray;
+}
+
+
 #btimeline .btimeline-item .btimeline-content:before {
 	content:'';
 	position:absolute;
@@ -105,9 +142,9 @@
 	top:20px;
 	width:0;
 	height:0;
-	border-top:7px solid transparent;
-	border-bottom:7px solid transparent;
-	border-left:7px solid #ee4d4d
+	border-top:6px solid transparent;
+	border-bottom:6px solid transparent;
+	border-left:6px solid #ee4d4d
 }
 
 #btimeline .btimeline-item .btimeline-content.right {
@@ -119,7 +156,7 @@
 	right:45%;
 	left:inherit;
 	border-left:0;
-	border-right:7px solid #ee4d4d
+	border-right:7px solid #ee4d4d;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,6 +184,16 @@
 
 	#btimeline .btimeline-item .btimeline-icon {
 		left:0;
+	}
+
+	#btimeline .btimeline-item .btimeline-icon-last {
+		left:0;
+		width:50px;
+		height:50px;
+		line-height:1em;
+		font-size: .55em;
+		text-align: center;
+		font-weight:bold;
 	}
 
 }
