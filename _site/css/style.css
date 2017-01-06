@@ -34,7 +34,7 @@ Modules - reusable parts of our design
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #7b4397; /* #d7e4ed */
+  background: #fff; /* #d7e4ed */
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -81,7 +81,7 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #7b4397, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -97,15 +97,6 @@ Modules - reusable parts of our design
   background: #7b4397; /* #7b4397 */
 }
 
-.cd-timeline-img.cd-purple p{
-	line-height:1.25em;
-	font-size:1.4em;
-	text-align: center;
-	font-weight:bold;
-	margin-top: 12px;
-	color: white;
-}
-
 .cd-timeline-img-last {
   background: #7b4397; 
   position: absolute;
@@ -114,7 +105,7 @@ Modules - reusable parts of our design
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #7b4397, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img-last.cd-purple p{
@@ -122,10 +113,9 @@ Modules - reusable parts of our design
 	font-size:1.4em;
 	text-align: center;
 	font-weight:bold;
-	margin-top: 21px;
+	margin-top: 25px;
 	color: white;
 }
-
 
 .cd-timeline-img.cd-lpurple {
   background: #d8bfd8; /* #7b4397 */
@@ -267,20 +257,80 @@ Modules - reusable parts of our design
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
-@media only screen and (min-width: 768px) {
-  .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 2em; /* 1.25rem */
-  }
+@media only screen and (max-width: 768px) {
+	.cd-timeline-content h2 {
+		color: #dc2430;
+		font-weight: bold;
+		font-size: 1.25em;
+	}
   .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 14px;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
+	.cd-timeline-img.cd-purple p{
+		line-height:1.25em;
+		font-size:1.2em;
+		text-align: center;
+		font-weight:bold;
+		margin-top: 9px;
+		color: white;
+	}
+	.cd-timeline-img-last {
+		background: #7b4397; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+	}
+
+	.cd-timeline-img-last.cd-purple p{
+		font-size: 13px;
+		text-align: center;
+		font-weight:bold;
+		margin-top: 11px;
+		color: white;
+	}
 }
+
+@media only screen and (min-width: 768px) {
+
+	.cd-timeline-img.cd-purple p{
+		line-height:1.25em;
+		font-size:1.2em;
+		text-align: center;
+		font-weight:bold;
+		margin-top: 9px;
+		color: white;
+	}
+
+	.cd-timeline-img-last {
+		background: #7b4397; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+	}
+
+	.cd-timeline-img-last.cd-purple p{
+		font-size: 13px;
+		text-align: center;
+		font-weight:bold;
+		margin-top: 11px;
+		color: white;
+	}
+}
+
+
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
@@ -296,6 +346,34 @@ Modules - reusable parts of our design
   .cd-timeline-content .cd-read-more {
     float: left;
   }
+	.cd-timeline-img.cd-purple p{
+		line-height:1.25em;
+		font-size:1.6em;
+		text-align: center;
+		font-weight:bold;
+		margin-top: 14px;
+		color: white;
+	}
+
+	.cd-timeline-img-last {
+		background: #7b4397; 
+		position: absolute;
+		top: 0;
+		left: 46.7%;
+		width: 78px;
+		height: 78px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+	}
+
+	.cd-timeline-img-last.cd-purple p{
+		line-height:1.25em;
+		font-size:1.4em;
+		text-align: center;
+		font-weight:bold;
+		margin-top: 25px;
+		color: white;
+	}
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
