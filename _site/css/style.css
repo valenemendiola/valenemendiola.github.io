@@ -34,12 +34,12 @@ Modules - reusable parts of our design
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #00ffff; /* #d7e4ed */
+  background: #7b4397; /* #d7e4ed */
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
   #cd-timeline::before {
     left: 50%;
@@ -81,7 +81,7 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #00ffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #7b4397, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -93,11 +93,42 @@ Modules - reusable parts of our design
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #d8bfd8; /* #7b4397 */
+.cd-timeline-img.cd-purple {
+  background: #7b4397; /* #7b4397 */
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+
+.cd-timeline-img.cd-purple p{
+	line-height:1.25em;
+	font-size:1.4em;
+	text-align: center;
+	font-weight:bold;
+	margin-top: 12px;
+	color: white;
+}
+
+.cd-timeline-img-last {
+  background: #7b4397; 
+  position: absolute;
+  top: 0;
+  left: 47%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #7b4397, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-timeline-img-last.cd-purple p{
+	line-height:1.25em;
+	font-size:1.4em;
+	text-align: center;
+	font-weight:bold;
+	margin-top: 21px;
+	color: white;
+}
+
+
+.cd-timeline-img.cd-lpurple {
+  background: #d8bfd8; /* #7b4397 */
 }
 .cd-timeline-img.cd-location {
   background: #f0ca45;
@@ -185,7 +216,7 @@ Modules - reusable parts of our design
   margin-left: 60px;
   background: white;
   border-radius: 0.25em;
-  padding: 1em;
+  padding: .2em;
   border: #dc2430;
   /*box-shadow: inset 0 0 1em #dc2430; /* box-shadow: 0 3px 0 #d7e4ed */
   
@@ -208,12 +239,12 @@ Modules - reusable parts of our design
   display: inline-block;
 }
 .cd-timeline-content p {
-  margin: 1em 0;
+  margin: .25em 0;
   line-height: 1.6;
 }
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
+  padding: .5em 1em;
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
@@ -239,7 +270,7 @@ Modules - reusable parts of our design
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 2em; /* 1.25rem */
   }
   .cd-timeline-content p {
     font-size: 16px;
@@ -253,7 +284,7 @@ Modules - reusable parts of our design
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    padding: 1em;
     width: 45%;
   }
   .cd-timeline-content::before {
