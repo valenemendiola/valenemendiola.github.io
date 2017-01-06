@@ -16,6 +16,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
+#timeline {
+  background-color: #fdcc52;
+}
 
 #cd-timeline {
   position: relative;
@@ -31,7 +34,7 @@ Modules - reusable parts of our design
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #7b4397; /* #d7e4ed */
+  background: #00ffff; /* #d7e4ed */
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -78,7 +81,7 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #7b4397, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #00ffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -91,7 +94,7 @@ Modules - reusable parts of our design
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #7b4397;
+  background: #d8bfd8; /* #7b4397 */
 }
 .cd-timeline-img.cd-movie {
   background: #c03b44;
@@ -183,7 +186,8 @@ Modules - reusable parts of our design
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: inset 0 0 1em #7b4397; /* box-shadow: 0 3px 0 #d7e4ed */
+  border: #dc2430;
+  /*box-shadow: inset 0 0 1em #dc2430; /* box-shadow: 0 3px 0 #d7e4ed */
   
 }
 .cd-timeline-content:after {
@@ -192,11 +196,13 @@ Modules - reusable parts of our design
   clear: both;
 }
 .cd-timeline-content h2 {
-  color: #303e49;
+  color: #dc2430; /* #303e49; */
+  font-weight: bold;
+  font-size: 2em;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 0.8125em;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
